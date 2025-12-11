@@ -14,7 +14,7 @@ const elements = {
     searchBtn: document.getElementById('search-btn'),
     notifyBtn: document.getElementById('notify-btn'),
     themeToggle: document.getElementById('theme-toggle'),
-    weatherSection: document.getElementById('weather-section'),
+    weatherSection: document.getElementById('weather'),
     favoritesSection: document.getElementById('favorites-section'),
     favoritesList: document.getElementById('favorites-list'),
     favoriteBtn: document.getElementById('favorite-btn'),
@@ -217,9 +217,9 @@ function displayWeather(data, cityName) {
 
             hourlyItems.push(`
                 <div class="hourly-item ${alertClass}">
-                    <div class="hourly-time">${time.getHours()}h</div>
-                    <div class="hourly-icon">${getWeatherEmoji(code)}</div>
-                    <div class="hourly-temp">${Math.round(temp)}°C</div>
+                    <div class="hourly-time text-size-display-small text-weight-bold">${time.getHours()}h</div>
+                    <div class="hourly-icon text-size-display-small">${getWeatherEmoji(code)}</div>
+                    <div class="hourly-temp text-size-display-small">${Math.round(temp)}°C</div>
                 </div>
             `);
         }
@@ -330,3 +330,15 @@ function showError(message) {
 function hideError() {
     elements.errorMessage.classList.add('hidden');
 }
+
+// ===== Favoris =====
+
+
+// ===== Mapping =====
+elements.searchBtn.addEventListener("click", (e) => {
+    handleSearch();
+})
+
+elements.notifyBtn.addEventListener("click", (e) => {
+    requestNotificationPermission();
+})

@@ -1,0 +1,33 @@
+section {
+    margin: 16px 0;
+}
+
+.current-weather {
+    display: flex;
+}
+
+#weather .caracteristics {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 500px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+#weather .hourly-container {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#search {
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none;
+}

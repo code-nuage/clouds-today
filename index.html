@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clouds today ?</title>
+    <link rel="stylesheet" href="styles/simpliestui.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="app-header">
+            <h1 class="text-size-display-large text-weight-bold">Clouds today ?</h1>
+        </header>
+
+        <div id="error-message" class="error hidden"></div>
+        <div id="loading" class="loading hidden">Chargement…</div>
+
+        <section id="weather" class="hidden">
+            <h2 id="city-name" class="text-size-display-medium text-weight-bold pos-center"></h2>
+
+            <div class="temp-main full-width">
+                <div id="weather-icon" class="text-size-hero-medium pos-center"></div>
+                <div class="pos-center"><span id="temperature" class="text-size-display-large text-weight-bold"></span>°C</div>
+            </div>
+            <ul class="caracteristics full-width">
+                <li>Sensation : <span id="feels-like"></span></li>
+                <li>Vent : <span id="wind"></span></li>
+                <li>Humidité : <span id="humidity"></span></li>
+            </ul>
+
+            <div id="hourly-list" class="hourly-container"></div>
+        </section>
+
+        <section id="search" class="gap-8">
+            <input type="text" id="city-input" placeholder="Rechercher une ville…"/>
+            <button id="search-btn" class="btn">Rechercher</button>
+            <button id="notify-btn" class="btn">🔔 Activer les notifications</button>
+            <button id="favorite-btn" class="btn positive">⭐ Ajouter aux favoris</button>
+        </section>
+
+        <section id="favorites" class="hidden">
+            <h3>Favoris</h3>
+            <ul id="favorites-list"></ul>
+        </section>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
