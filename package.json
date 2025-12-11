@@ -1,0 +1,20 @@
+{
+  "name": "clouds-today",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/code-nuage/clouds-today#readme",
+  "bugs": {
+    "url": "https://github.com/code-nuage/clouds-today/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-nuage/clouds-today.git"
+  },
+  "license": "ISC",
+  "author": "code-nuage",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
