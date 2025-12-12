@@ -2,7 +2,7 @@
   "name": "Clouds today ?",
   "short_name": "Cloud today ?",
   "description": "Meteo progressive web app",
-  "start_url": ".",
+  "start_url": "/clouds-today/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
