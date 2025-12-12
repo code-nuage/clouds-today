@@ -113,7 +113,7 @@ async function requestNotificationPermission() {
 }
 
 function sendWeatherNotification(city, message, type = 'info') {
-  
+    new Notification("Clouds today ? " + city, {type: type, body: message});
 }
 // ===== Recherche et API Météo =====
 async function handleSearch() {
@@ -244,6 +244,8 @@ function checkWeatherAlerts(data, cityName) {
         if (hourIndex < hourly.time.length) {
             const code = hourly.weather_code[hourIndex];
             const temp = hourly.temperature_2m[hourIndex];
+
+            console.log(temp);
             
             // Vérifier la pluie
             if (!rainAlert && CONFIG.RAIN_CODES.includes(code)) {
