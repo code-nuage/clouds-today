@@ -1,3 +1,10 @@
+#app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 section {
     margin: 16px 0;
 }
